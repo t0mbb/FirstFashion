@@ -22,8 +22,8 @@
     <title>First Fashion</title>
 </head>
 <body style="
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 150% 100%;
+  background: linear-gradient(-80deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 100% 150%;
   animation: gradient 5s ease infinite;
 }
 " >

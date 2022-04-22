@@ -35,7 +35,7 @@
 .agileits_search input[type="text"] {
     color: darkgrey;
     width: 510px;
-    height: auto;
+    height: 50px;
     padding: 10px;
     border: 2px solid darkgreen;
     border-radius: 4px 0 0 4px;

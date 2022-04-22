@@ -1,5 +1,4 @@
-@extends('masters.homepageMaster')
-@section('main')
+<?php $__env->startSection('main'); ?>
 <style>
     body {
         background: linear-gradient(to right, #c04848, #480048);
@@ -10,21 +9,21 @@
         width: 140px
     }
 </style>
-{{--<div class="container" style="margin-top: -50px ;" >--}}
-{{--    <div class="row text-center text-white mb-4">--}}
-{{--        <div class="col-lg-7 mx-auto">--}}
-{{--            <h1 style="background: linear-gradient(to right, rgba(249, 0, 104, 1) 0%, rgba(247, 117, 24, 1) 100%);--}}
-{{--        border-radius: 15px;--}}
-{{--        padding :5px;--}}
-{{--        margin-left: -60px;--}}
-{{--        margin-right: -60px;--}}
-{{--        text-align : center;--}}
-{{--        font-size: 40px;--}}
 
-{{--        color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"  class="display-4"><b>Shirt By Category</b></h1>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-    @foreach($resultSearch as $re)
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <?php $__currentLoopData = $resultSearch; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $re): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
         <div class="row">
             <div class="col-lg-8 mx-auto">
                 <!-- List group-->
@@ -34,10 +33,10 @@
                         <!-- Custom content-->
                         <div class="media align-items-lg-center flex-column flex-lg-row p-3">
                             <div class="media-body order-2 order-lg-1">
-                                <h5 class="mt-0 font-weight-bold mb-2">{{$re->shirt_name}}</h5>
-                                <p style="color: lightskyblue"  class="font mb-0 large">{{$re->shirt_description}}</p>
+                                <h5 class="mt-0 font-weight-bold mb-2"><?php echo e($re->shirt_name); ?></h5>
+                                <p style="color: lightskyblue"  class="font mb-0 large"><?php echo e($re->shirt_description); ?></p>
                                 <div class="d-flex align-items-center justify-content-between mt-1">
-                                    <h6 class="font-weight-bold my-2">{{ $re->shirt_price }}$</h6>
+                                    <h6 class="font-weight-bold my-2"><?php echo e($re->shirt_price); ?>$</h6>
                                     <ul class="list-inline small">
                                         <li class="list-inline-item m-0"><i class="fa fa-star text-danger"></i></li>
                                         <li class="list-inline-item m-0"><i class="fa fa-star text-danger"></i></li>
@@ -46,17 +45,19 @@
                                         <li class="list-inline-item m-0"><i class="fa fa-star text-danger"></i></li>
                                     </ul>
                                 </div>
-                            </div><img src="{{asset('storage/images/shirt/' .$re->shirt_image)}}" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
+                            </div><img src="<?php echo e(asset('storage/images/shirt/' .$re->shirt_image)); ?>" alt="Generic placeholder image" width="200" class="ml-lg-5 order-1 order-lg-2">
                         </div> <!-- End -->
                     </li> <!-- End -->
                 </ul> <!-- End -->
             </div>
         </div>
-    @endforeach
-{{--</div>--}}
+    <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
 
 
-{{--</div>--}}
-{{--</div>--}}
-@endsection
 
+
+
+<?php $__env->stopSection(); ?>
+
+
+<?php echo $__env->make('masters.homepageMaster', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH E:\New folder\FirstFashion\resources\views/FirstFashion/homepage/search.blade.php ENDPATH**/ ?>
