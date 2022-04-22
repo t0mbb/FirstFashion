@@ -28,8 +28,7 @@
                 <div class="row">
                     <!-- search -->
                     <div class="col-lg-9 col-sm-8 agileits_search"style="padding-left : 130px;padding-top : 10px;">
-
-                        <form class="form-inline"
+                        <form class="form-inline" action="<?php echo e(route('FirstFashion.search')); ?>"
                               method="get" style="max-width:600px;">
                             <?php echo csrf_field(); ?>
                             <input class="form-control" type="text" name="search"

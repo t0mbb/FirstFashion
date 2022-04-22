@@ -38,4 +38,20 @@ class FirstFashionHomepageController extends Controller
             ]
         );
     }
+    public function search(Request $request){
+        $categories = HomepageRepos::getAllCategories();
+        $search = (object)[
+            'search' => $request->input('search'),
+        ] ;
+
+        $resultSearch = HomepageRepos::resultSearch($search);
+
+        return view('FirstFashion.homepage.search',
+            [
+                'resultSearch' => $resultSearch,
+                'categories' => $categories
+
+            ]);
+
+    }
 }

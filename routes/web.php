@@ -190,6 +190,11 @@ Route::group(['prefix' => 'FirstFashion'], function (){
         'uses' => 'FirstFashionHomepageController@detailShirt',
         'as' => 'FirstFashion.detailShirt'
     ]);
+    Route::get('search',[
+        'uses' => 'FirstFashionHomepageController@search',
+        'as' => 'FirstFashion.search'
+    ]);
+
 });
 
 Route::group(['prefix' => 'auth'], function (){
