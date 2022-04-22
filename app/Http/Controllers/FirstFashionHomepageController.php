@@ -19,6 +19,7 @@ class FirstFashionHomepageController extends Controller
                 'shirt' => $shirt
             ]);
     }
+
     public function allShirt(){
         $categories = CategoryRepos::getAllCategories();
         $shirt = ShirtRepos::getAllShirt();
@@ -50,7 +51,6 @@ class FirstFashionHomepageController extends Controller
             [
                 'resultSearch' => $resultSearch,
                 'categories' => $categories
-
             ]);
 
     }

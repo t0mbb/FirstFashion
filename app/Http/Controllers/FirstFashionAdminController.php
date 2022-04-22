@@ -17,7 +17,6 @@ class FirstFashionAdminController extends Controller
 
     public function admin_manager(){
         $admins = AdminRepos::getAllAdmins();
-
         return view('FirstFashion.admin.admin_manager',
             [
                 'admins' => $admins
@@ -94,7 +93,6 @@ class FirstFashionAdminController extends Controller
         $admin = AdminRepos::getAdminById($ad_id);
         $aduser = AdminRepos::getAdminNameByID($ad_id);
         $user = Session::get('ad_user');
-
         for($i = 0; $i < count($aduser); $i++)
             if ($user != $aduser[$i]->ad_user) {
                 return redirect()->action('FirstFashionAdminController@admin_manager')

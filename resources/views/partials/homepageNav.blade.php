@@ -94,24 +94,27 @@
                             <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
                                class="dropdown-item"
                                href="{{route('FirstFashion.allShirt')}}">All Product</a>
+                                            @foreach($categories as $c)
                             <div class="dropdown-divider"></div>
                             <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
                                class="dropdown-item"
-                               href="#">Coat</a>
-                                            <div class="dropdown-divider"></div>
-                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
-                               class="dropdown-item"
-                               href="#">Polo</a>
-                                            <div class="dropdown-divider"></div>
-                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
-                               class="dropdown-item"
-                               href="#">Sweater</a>
-                                            <div class="dropdown-divider"></div>
-                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
-                               class="dropdown-item"
-                               href="#">T-shirt</a>
-                                        </ul>
+                               href="#">{{$c->cat_name}}</a>
+                                        @endforeach
+{{--                                            <div class="dropdown-divider"></div>--}}
+{{--                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"--}}
+{{--                               class="dropdown-item"--}}
+{{--                               href="#">{{$c->cat_name}}</a>--}}
+{{--                                            <div class="dropdown-divider"></div>--}}
+{{--                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"--}}
+{{--                               class="dropdown-item"--}}
+{{--                               href="#">{{$c->cat_name}}r</a>--}}
+{{--                                            <div class="dropdown-divider"></div>--}}
+{{--                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"--}}
+{{--                               class="dropdown-item"--}}
+{{--                               href="#">{{$c->cat_name}}</a>--}}
+{{--                                        </ul>--}}
                         </div>
+
                         </div>
                             </div>
                         </div>

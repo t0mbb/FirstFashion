@@ -29,7 +29,7 @@ class CategoryRepos
 
     public static function getAllCategoryInTableShirt()
     {
-        $sql = 'select cat_id ';
+        $sql = 'select distinct cat_id ';
         $sql .= 'from shirt ';
         return DB::select($sql);
     }

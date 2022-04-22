@@ -121,13 +121,13 @@ class FirstFashionCategoryController extends Controller
             return redirect()->action('FirstFashionCategoryController@category_manager');
         }
         $sid = CategoryRepos::getAllCategoryInTableShirt();
-        for ($i = 0; $i < count($sid); $i++)
-            if ($cat_id == $sid[$i]->cat_id)
-            {
-                return redirect()->action('FirstFashionCategoryController@category_manager')
-                    ->with('msg', 'Careful , Its still have product in Category.');
-            }
-        else
+        for ($i=0; $i < count($sid);$i++)
+        if($cat_id == $sid[$i]->cat_id)
+         {
+             return redirect()->action('FirstFashionCategoryController@category_manager')
+                 ->with('msg', 'Careful , Its still have product in Category.');
+         }
+
         CategoryRepos::deleteCategory($cat_id);
         return redirect()->action('FirstFashionCategoryController@category_manager')
             ->with('msg', 'Congrats, Delete Category Successfully');

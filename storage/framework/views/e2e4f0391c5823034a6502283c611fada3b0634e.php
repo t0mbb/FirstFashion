@@ -94,24 +94,27 @@
                             <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
                                class="dropdown-item"
                                href="<?php echo e(route('FirstFashion.allShirt')); ?>">All Product</a>
+                                            <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $c): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                             <div class="dropdown-divider"></div>
                             <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
                                class="dropdown-item"
-                               href="#">Coat</a>
-                                            <div class="dropdown-divider"></div>
-                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
-                               class="dropdown-item"
-                               href="#">Polo</a>
-                                            <div class="dropdown-divider"></div>
-                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
-                               class="dropdown-item"
-                               href="#">Sweater</a>
-                                            <div class="dropdown-divider"></div>
-                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
-                               class="dropdown-item"
-                               href="#">T-shirt</a>
-                                        </ul>
+                               href="#"><?php echo e($c->cat_name); ?></a>
+                                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
+
                         </div>
+
                         </div>
                             </div>
                         </div>
