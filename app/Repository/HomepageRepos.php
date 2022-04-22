@@ -13,4 +13,12 @@ class HomepageRepos
 
         return DB::select($sql);
     }
+    public static function resultSearch($search){
+        $name = '%'.$search->search.'%';
+        $sql = 'select * ';
+        $sql .= 'from shirt ';
+        $sql .= 'where shirt_name like ? ';
+
+        return DB::select ($sql, [$name]);
+    }
 }

@@ -2,9 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cecb261-4eb9-451a-9e3c-837c0633ef28" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/storage" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
+=======
+      <change afterPath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionHomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionHomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/HomepageRepos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/HomepageRepos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/masters/homepageMaster.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/masters/homepageMaster.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/homepageNav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/homepageNav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/W5C0VdUOYEisJLFGNgEQypNfAzGuboAAKtQ41oVW" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/W5C0VdUOYEisJLFGNgEQypNfAzGuboAAKtQ41oVW" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b925e1f7268e66958eab54a311a522056a11bcfb.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/b925e1f7268e66958eab54a311a522056a11bcfb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e2e4f0391c5823034a6502283c611fada3b0634e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e2e4f0391c5823034a6502283c611fada3b0634e.php" afterDir="false" />
+>>>>>>> 48b83b28216e88b71c420ae6c1c323a4dcfd3b60
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,8 +205,12 @@
       <workItem from="1650576585057" duration="415000" />
       <workItem from="1650577004623" duration="17000" />
       <workItem from="1650577482548" duration="7499000" />
+<<<<<<< HEAD
       <workItem from="1650614611371" duration="12020000" />
       <workItem from="1650627758052" duration="186000" />
+=======
+      <workItem from="1650614611371" duration="13892000" />
+>>>>>>> 48b83b28216e88b71c420ae6c1c323a4dcfd3b60
     </task>
     <servers />
   </component>

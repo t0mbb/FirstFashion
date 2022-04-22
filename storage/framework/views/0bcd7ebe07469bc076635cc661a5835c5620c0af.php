@@ -22,8 +22,8 @@
     <title>First Fashion</title>
 </head>
 <body style="
-  background: linear-gradient(-80deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 100% 150%;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 150% 100%;
   animation: gradient 5s ease infinite;
 }
 " >
@@ -50,4 +50,4 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-<?php /**PATH /Users/t0mbb./Documents/c03/FirstFashion/resources/views/masters/homepageMaster.blade.php ENDPATH**/ ?>
+<?php /**PATH E:\New folder\FirstFashion\resources\views/masters/homepageMaster.blade.php ENDPATH**/ ?>
