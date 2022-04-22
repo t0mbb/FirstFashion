@@ -177,6 +177,12 @@ Route::group(['prefix' => 'FirstFashion'], function (){
         'uses' => 'FirstFashionHomepageController@homepage',
         'as' => 'FirstFashion.homepage'
     ]);
+
+    Route::get('ShirtbyCat/{cat_id}',[
+        'uses' => 'FirstFashionHomepageController@getCategories',
+        'as' => 'FirstFashion.ShirtbyCat'
+    ]);
+
     Route::get('allShirt',[
         'uses' => 'FirstFashionHomepageController@allShirt',
         'as' => 'FirstFashion.allShirt'

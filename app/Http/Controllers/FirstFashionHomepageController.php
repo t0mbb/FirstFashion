@@ -20,6 +20,18 @@ class FirstFashionHomepageController extends Controller
             ]);
     }
 
+    public function getCategories($cat_id){
+        $catname = CategoryRepos::getCatNameById($cat_id);
+        $caregories = CategoryRepos::getAllCategories();
+        $ShirtbyCat = HomepageRepos::getShirtbyCatId($cat_id);
+        return view('FirstFashion.homepage.ShirtbyCat',
+            [
+                'categories' => $caregories,
+                'ShirtbyCat' => $ShirtbyCat,
+                'catname' => $catname
+            ]);
+    }
+
     public function allShirt(){
         $categories = CategoryRepos::getAllCategories();
         $shirt = ShirtRepos::getAllShirt();
@@ -51,6 +63,7 @@ class FirstFashionHomepageController extends Controller
             [
                 'resultSearch' => $resultSearch,
                 'categories' => $categories
+
             ]);
 
     }

@@ -5,8 +5,8 @@
             <!-- logo -->
             <div class="col-lg-3 col-md-3 logo_agile">
                 <h1>
-                    <img src="{{asset('image/logo_transparent.png')}}" style="width: 100px; margin-right: 10px;" alt="">
-                    <a href="{{route('FirstFashion.homepage')}}"
+                    <img src="<?php echo e(asset('image/logo_transparent.png')); ?>" style="width: 100px; margin-right: 10px;" alt="">
+                    <a href="<?php echo e(route('FirstFashion.homepage')); ?>"
                        style="font-family: Impact, Charcoal, sans-serif;
     font-size: 25px;
     letter-spacing: 2px;
@@ -27,12 +27,12 @@
                 <div class="row">
                     <!-- search -->
                     <div class="col-lg-9 col-sm-8 agileits_search" style="padding-left : 130px;padding-top : 10px;">
-                        <form class="form-inline" action="{{route('FirstFashion.search')}}"
+                        <form class="form-inline" action="<?php echo e(route('FirstFashion.search')); ?>"
                               method="get" style="max-width:600px;">
-                            @csrf
+                            <?php echo csrf_field(); ?>
                             <input class="form-control" type="text" name="search"
                                    placeholder="Search for shirts and more" aria-label="Search"
-                                   value="{{old('search')?? ''}}">
+                                   value="<?php echo e(old('search')?? ''); ?>">
                             <button class="btn btn-outline-success" type="submit">
                                 <i class="bi bi-search-heart" style="font-size: 25px" aria-hidden="true"></i></button>
                         </form>
@@ -43,27 +43,27 @@
                         class="col-lg-3 col-sm-4 top_nav_right text-center mt-sm-0 mt-2 d-flex align-items-center justify-content-between">
                         <div class="col-lg-8 col-sm-7 header-right ml-auto text-sm-right text-center"
                              style="padding-left : 50px;padding-top: 5px;">
-                            {{--                header list--}}
+                            
                             <ul class="top-header-lists">
                                 <li style="list-style: none">
-                                    <a href="{{route('FirstFashion.registerCustomer')}}"
+                                    <a href="<?php echo e(route('FirstFashion.registerCustomer')); ?>"
                                        style="font-size: 20px; color: whitesmoke;text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;">
                                         <i class="fa-solid fa-right-to-bracket"></i><b>Register</b>
                                     </a>
                                 </li>
                             </ul>
                         </div>
-                        {{--                        <div class="col-lg-6 col-sm-5 header-right ml-auto text-sm-right text-center">--}}
-                        {{--                            --}}{{--                header list--}}
-                        {{--                            <ul class="top-header-lists">--}}
-                        {{--                                <li style="list-style: none">--}}
-                        {{--                                    <a href="" style="font-size: 20px; color: orangered ">--}}
-                        {{--                                        <i class="fa-solid fa-cart-shopping"></i>--}}
-                        {{--                                        <b>Cart</b>--}}
-                        {{--                                    </a>--}}
-                        {{--                                </li>--}}
-                        {{--                            </ul>--}}
-                        {{--                        </div>--}}
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
                     </div>
                     <!-- //cart details -->
                 </div>
@@ -81,7 +81,7 @@
                 <ul class="navbar-nav text-center mr-auto">
                     <li class="nav-item active mr-lg-2 mb-lg-0 mb-2">
                         <a style="font-size: 20px" class="nav-link"
-                           href="{{route('FirstFashion.homepage')}}"><b>Home</b>
+                           href="<?php echo e(route('FirstFashion.homepage')); ?>"><b>Home</b>
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
@@ -99,25 +99,25 @@
                                         <ul class="multi-column-dropdown">
                                             <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
                                                class="dropdown-item"
-                                               href="{{route('FirstFashion.allShirt')}}">All Product</a>
-                                            @foreach($categories as $c)
+                                               href="<?php echo e(route('FirstFashion.allShirt')); ?>">All Product</a>
+                                            <?php $__currentLoopData = $categories; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $c): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                                             <div class="dropdown-divider"></div>
                                             <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"
                                                class="dropdown-item"
-                                               href="{{route('FirstFashion.ShirtbyCat', ['cat_id' => $c->cat_id])}}">{{$c->cat_name}}</a>
-                                            @endforeach
-{{--                                            <div class="dropdown-divider"></div>--}}
-{{--                                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"--}}
-{{--                                               class="dropdown-item"--}}
-{{--                                               href="#">Polo</a>--}}
-{{--                                            <div class="dropdown-divider"></div>--}}
-{{--                                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"--}}
-{{--                                               class="dropdown-item"--}}
-{{--                                               href="#">Sweater</a>--}}
-{{--                                            <div class="dropdown-divider"></div>--}}
-{{--                                            <a style="color:white;text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #ff8000, 0 -18px 40px #F00;"--}}
-{{--                                               class="dropdown-item"--}}
-{{--                                               href="#">T-shirt</a>--}}
+                                               href="<?php echo e(route('FirstFashion.ShirtbyCat', ['cat_id' => $c->cat_id])); ?>"><?php echo e($c->cat_name); ?></a>
+                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+
+
+
+
+
+
+
+
+
+
+
+
                                         </ul>
                                     </div>
                                 </div>
@@ -145,3 +145,4 @@
 </div>
 <!-- //navigation -->
 
+<?php /**PATH E:\New folder\FirstFashion\resources\views/partials/homepageNav.blade.php ENDPATH**/ ?>

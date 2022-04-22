@@ -51,6 +51,14 @@ class CategoryRepos
         return DB::select($sql, [$cat_id]);
     }
 
+    public static function getCatNameById($cat_id){
+        $sql = 'select cat_name ';
+        $sql .= 'from category ';
+        $sql .= 'where cat_id = ? ';
+
+        return DB::select($sql, [$cat_id]);
+    }
+
     public static function updateCategory ($category){
         $sql = 'update category ';
         $sql .= 'set cat_name = ?, cat_image = ? ';

@@ -21,4 +21,12 @@ class HomepageRepos
 
         return DB::select ($sql, [$name]);
     }
+
+    public static function getShirtbyCatId($cat_id){
+        $sql = 'select * ';
+        $sql .= 'from shirt ';
+        $sql .= 'where shirt.cat_id = ?';
+
+        return DB::select($sql, [$cat_id]);
+    }
 }
