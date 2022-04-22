@@ -11,7 +11,7 @@
             <?php echo csrf_field(); ?>
             <?php echo $__env->make('FirstFashion.shirt.shirtFields', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 
-            <button type="submit" class="btn btn-success" style="font-size: 20px; margin-left: 100px">Update</button>
+            <button type="submit" class="btn btn-danger" style="font-size: 20px; margin-left: 100px">Update</button>
         </form>
     </div>
 <?php $__env->stopSection(); ?>

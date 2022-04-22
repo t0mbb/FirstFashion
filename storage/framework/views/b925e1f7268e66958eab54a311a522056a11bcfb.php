@@ -21,7 +21,12 @@
 
     <title>First Fashion</title>
 </head>
-<body style="background-color: #a6e1ec">
+<body style="
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 150% 100%;
+  animation: gradient 5s ease infinite;
+}
+" >
 
 <header>
     <?php echo $__env->make('partials.homepageNav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -31,10 +36,6 @@
 <main role="main">
     <?php echo $__env->yieldContent('main'); ?>
 </main>
-
-
-
-
 
 <footer>
     <?php echo $__env->make('partials.FirstFashionFoo', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>

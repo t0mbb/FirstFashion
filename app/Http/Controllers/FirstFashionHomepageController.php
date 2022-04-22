@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Repository\CategoryRepos;
 use App\Repository\HomepageRepos;
 use App\Repository\ShirtRepos;
 use Illuminate\Http\Request;
@@ -17,5 +18,24 @@ class FirstFashionHomepageController extends Controller
                 'categories' => $categories,
                 'shirt' => $shirt
             ]);
+    }
+    public function allShirt(){
+        $categories = CategoryRepos::getAllCategories();
+        $shirt = ShirtRepos::getAllShirt();
+        return view('FirstFashion.homepage.allShirt',
+            [
+                'categories' => $categories,
+                'shirt' => $shirt
+            ]);
+    }
+    public function detailShirt($shirt_id){
+        $category = HomepageRepos::getAllCategories();
+        $shirt = ShirtRepos::getShirtById($shirt_id);
+        return view('FirstFashion.homepage.detailShirt',
+            [
+                'category' => $category,
+                'uniform' => $shirt[0]
+            ]
+        );
     }
 }

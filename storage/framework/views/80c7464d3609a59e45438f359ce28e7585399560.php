@@ -20,7 +20,7 @@
     </style>
 
     <!-- banner -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin: -50px">
         <!-- Indicators-->
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -85,7 +85,7 @@
         </a>
     </div>
     <!-- //banner -->
-    <div class="container">
+    <div class="container" style="padding-top: 60px">
         <div class="section-content relative">
             <div class="gap-element" style="display: block; height: auto; padding-top: 30px;"></div>
             <div class="row" id="row-525041891">
@@ -180,7 +180,7 @@
                     <div class="banner-style d-flex align-items-center">
                         <div class="container">
                             <div class="w3l-space-banner">
-                                <div class="carousel-caption-banner" style="max-width: 100%; height: 650px">
+                                <div class="carousel-caption-banner" style="max-width : 100%; height: 650px">
                                 <img  src="<?php echo e(asset('image/binhgold.jpg')); ?>" class="d-block w-100 img-fluid" alt="First slide">
                                 </div>
                             </div>

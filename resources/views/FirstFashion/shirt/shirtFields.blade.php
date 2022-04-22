@@ -7,7 +7,7 @@
 
 <div class="mb-3" style="margin-left: 100px">
     <label  style="color: rgb(255,71,91); font-size: 30px" for="shirt_image" class="font-weight-bold">Images</label>
-    <img class="img-fluid" alt="Shirt Image" width="230" height="120" src="{{ asset('storage/images/shirt/'.$shirt->shirt_image )}}" alt="">
+    <img class="img-fluid" style="margin-left: 330px;margin-bottom: 10px;" alt="Shirt Image" width="150" height="150" src="{{ asset('storage/images/shirt/'.$shirt->shirt_image )}}" alt="">
     <input class="form-control" type="file" id="shirt_image" name="shirt_image" value="{{old('shirt_image')?? $shirt->shirt_image}}">
 </div>
 

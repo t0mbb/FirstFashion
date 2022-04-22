@@ -177,6 +177,19 @@ Route::group(['prefix' => 'FirstFashion'], function (){
         'uses' => 'FirstFashionHomepageController@homepage',
         'as' => 'FirstFashion.homepage'
     ]);
+    Route::get('allShirt',[
+        'uses' => 'FirstFashionHomepageController@allShirt',
+        'as' => 'FirstFashion.allShirt'
+    ]);
+    Route::get('', [
+        'uses' => 'FirstFashionHomepageController@homepage',
+        'as' => 'FirstFashion.homepage'
+    ]);
+
+    Route::get('detailShirt/{shirt_id}', [
+        'uses' => 'FirstFashionHomepageController@detailShirt',
+        'as' => 'FirstFashion.detailShirt'
+    ]);
 });
 
 Route::group(['prefix' => 'auth'], function (){

@@ -367,6 +367,7 @@ ul.top-menu>li>a:hover,ul.top-menu>li>a:focus {
 .dropdown-menu.extended li a:hover {
     color:#32323a;
 }
+
 .dropdown-menu.tasks-bar .task-info .desc {
     font-size:13px;
     font-weight:normal;

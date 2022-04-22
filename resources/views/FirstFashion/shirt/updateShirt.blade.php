@@ -13,7 +13,7 @@
             @csrf
             @include('FirstFashion.shirt.shirtFields')
 
-            <button type="submit" class="btn btn-success" style="font-size: 20px; margin-left: 100px">Update</button>
+            <button type="submit" class="btn btn-danger" style="font-size: 20px; margin-left: 100px">Update</button>
         </form>
     </div>
 @endsection

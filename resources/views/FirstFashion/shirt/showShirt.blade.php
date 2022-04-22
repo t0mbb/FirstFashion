@@ -7,7 +7,7 @@
             ><b>Shirt Details</b></h1>
         </div>
         @include('FirstFashion.shirt.shirtDetails')
-        <a type="button" href="{{route('FirstFashion.shirt_manager')}}" class="btn btn-info"
+        <a type="button" href="{{route('FirstFashion.shirt_manager')}}" class="btn btn-danger"
            style="margin-left: 100px; font-size: 20px"
         >&lt;&lt;&nbsp;Shirt Manager</a>
     </div>
