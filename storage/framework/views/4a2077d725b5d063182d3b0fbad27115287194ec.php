@@ -37,7 +37,7 @@
                         <div class="media align-items-lg-center flex-column flex-lg-row p-3">
                             <div class="media-body order-2 order-lg-1">
                                 <h5 class="mt-0 font-weight-bold mb-2"><?php echo e($s->shirt_name); ?></h5>
-                                <p style="color: rgb(255,71,91);"   class="font-italic text-muted mb-0 small"><?php echo e($s->shirt_description); ?></p>
+                                <p style="color: lightskyblue"  class="font mb-0 large"><?php echo e($s->shirt_description); ?></p>
                                 <div class="d-flex align-items-center justify-content-between mt-1">
                                     <h6 class="font-weight-bold my-2"><?php echo e($s->shirt_price); ?>$</h6>
                                     <ul class="list-inline small">

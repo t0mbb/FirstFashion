@@ -1,5 +1,4 @@
 @extends('masters.homepageMaster')
-
 @section('main')
     <style>
         .carousel-control-next, .carousel-control-prev {

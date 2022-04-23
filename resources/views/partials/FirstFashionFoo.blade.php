@@ -1,120 +1,4 @@
-<!-- Footer -->
 
-{{--<footer class="bg-dark text-center text-white">--}}
-{{--    <!-- Grid container -->--}}
-{{--    <div class="container p-4">--}}
-{{--        <!-- Section: Social media -->--}}
-{{--        <section class="mb-4">--}}
-{{--            <!-- Facebook -->--}}
-{{--            <button type="button" class="btn btn-primary">--}}
-{{--                <i class="bi bi-facebook"><b> Facebook</b></i>--}}
-{{--            </button>--}}
-
-
-{{--            <button type="button" class="btn btn-danger">--}}
-{{--                <i class="bi bi-instagram"><b> Instagram</b></i>--}}
-{{--            </button>--}}
-
-{{--            <button type="button" class="btn btn-info">--}}
-{{--                <i class="bi bi-twitter"><b> Twitter</b></i>--}}
-{{--            </button>--}}
-
-
-{{--            <!-- Linkedin -->--}}
-{{--            <button type="button" class="btn btn-danger">--}}
-{{--                <i class="bi bi-messenger"><b> Messenger</b></i>--}}
-{{--            </button>--}}
-
-{{--            <!-- Github -->--}}
-
-{{--            <button type="button" class="btn btn-success">--}}
-{{--                <i class="bi bi-github"><b> Github</b></i>--}}
-{{--            </button>--}}
-{{--        </section>--}}
-{{--        <!-- End section: Social media -->--}}
-
-{{--        <!--Grid row-->--}}
-{{--        <div class="row">--}}
-{{--            <!--Grid column-->--}}
-{{--            <div class="col-lg-5 col-md-12 mb-4 mb-md-0">--}}
-{{--                <h1>--}}
-{{--                    <a href="{{route('FirstFashion.homepage')}}" style="font-family:'Javanese Text'">--}}
-{{--                        <img src="{{asset('image/logo.jpg')}}" style="width: 150px; height: 150px" alt=""></a>--}}
-{{--                </h1>--}}
-{{--                <h5 class="text-uppercase">First Fashion</h5>--}}
-
-{{--                <p>--}}
-{{--                    Always bring you a comfortable experience--}}
-{{--                </p>--}}
-{{--            </div>--}}
-{{--            <!--Grid column-->--}}
-{{--            <!--Grid column-->--}}
-{{--            <div class="col-lg-3 col-md-6 mb-4 mb-md-0" style="text-align: left">--}}
-{{--                <h5 class="text-uppercase mb-0">SUPPORTS</h5>--}}
-
-{{--                <ul class="list-unstyled">--}}
-{{--                    <li>--}}
-{{--                        <a href="#!" class="text-white">Home</a>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <a href="#!" class="text-white">Service</a>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <a href="#!" class="text-white">Warranty Policy</a>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <a href="#!" class="text-white">Shipping method</a>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <a href="#!" class="text-white">Customer care policy</a>--}}
-{{--                    </li>--}}
-
-{{--                </ul>--}}
-{{--            </div>--}}
-{{--            <!--Grid column-->--}}
-{{--            <!--Grid column-->--}}
-{{--            <div class="col-lg-4 col-md-6 mb-4 mb-md-0" style="text-align: left">--}}
-{{--                <h5 class="text-uppercase">CONTACT</h5>--}}
-
-{{--                <ul class="list-unstyled mb-0">--}}
-{{--                    <li>--}}
-{{--                        <span><i class="fa fa-map-marker"></i></span>--}}
-{{--                        <span>Golden Park Building 2nd<br>Pham Van Bach, Cau Giay, Ha Noi</span>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <span><i class="fa fa-phone"></i></span>--}}
-{{--                        <a href="#">+84 123 456 789</a>--}}
-{{--                        <br>--}}
-{{--                        <span><i class="fa fa-phone"></i></span>--}}
-{{--                        <a href="#">+84 961366036</a>--}}
-{{--                    </li>--}}
-{{--                    <li>--}}
-{{--                        <span><i class="fa fa-envelope"></i></span>--}}
-{{--                        <a href="#">FirstFashion@gmail.com</a>--}}
-{{--                    </li>--}}
-{{--                    <li style="margin-top: 10px">--}}
-{{--                        <img src="{{asset('image/qrpay.jpg')}}" style="width: 150px; height: 150px" alt=""></a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </div>--}}
-{{--            <!--Grid column-->--}}
-
-
-{{--        </div>--}}
-{{--        <!--Grid row-->--}}
-{{--    </div>--}}
-{{--    <!-- Grid container -->--}}
-
-{{--    <!-- Copyright -->--}}
-{{--    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">--}}
-{{--        © 2020 Copyright:--}}
-{{--        <a class="text-white" href="">FirstFashion.com</a>--}}
-{{--    </div>--}}
-
-{{--    <!-- End Copyright -->--}}
-{{--</footer>--}}
-
-<!-- Footer -->
 <style>
 
 </style>
@@ -164,7 +48,7 @@
                     <!-- Content -->
                     <h1>
                         <a href="{{route('FirstFashion.homepage')}}">
-                            <img src="{{asset('image/logo.jpg')}}" style="width: 150px; height: 150px" alt=""></a>
+                            <img src="{{asset('image/logo.png')}}" style="width: 150px; margin-right: 10px;" alt=""></a>
                     </h1>
                     <h5 style="color: black; font-weight: bold" class="text-uppercase">First Fashion</h5>
                     <p style="color: black; font-weight: bold; font-size: 18px">

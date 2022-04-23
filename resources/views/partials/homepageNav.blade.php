@@ -1,6 +1,6 @@
 <!-- header-bottom-->
-<div class="header-bot my-md-4 my-3" id="site-header" style="padding-right: 100px;">
-    <div class="container">
+<div  class="" id="site-header" style="">
+    <div class="container" style="">
         <div class="row header-bot_inner_wthreeinfo_header_mid align-items-center">
             <!-- logo -->
             <div class="col-lg-3 col-md-3 logo_agile">
@@ -23,7 +23,7 @@
             </div>
             <!-- //logo -->
             <!-- header-bot -->
-            <div class="col-lg-9 col-md-8 header">
+            <div class="col-lg-9 col-md-8 header" >
                 <div class="row">
                     <!-- search -->
                     <div class="col-lg-9 col-sm-8 agileits_search" style="padding-left : 130px;padding-top : 10px;">
@@ -53,17 +53,7 @@
                                 </li>
                             </ul>
                         </div>
-                        {{--                        <div class="col-lg-6 col-sm-5 header-right ml-auto text-sm-right text-center">--}}
-                        {{--                            --}}{{--                header list--}}
-                        {{--                            <ul class="top-header-lists">--}}
-                        {{--                                <li style="list-style: none">--}}
-                        {{--                                    <a href="" style="font-size: 20px; color: orangered ">--}}
-                        {{--                                        <i class="fa-solid fa-cart-shopping"></i>--}}
-                        {{--                                        <b>Cart</b>--}}
-                        {{--                                    </a>--}}
-                        {{--                                </li>--}}
-                        {{--                            </ul>--}}
-                        {{--                        </div>--}}
+
                     </div>
                     <!-- //cart details -->
                 </div>
