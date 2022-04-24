@@ -9,7 +9,6 @@
     <style type="text/css">
         /* Made with love by Mutiullah Samim*/
         @import url('https://fonts.googleapis.com/css?family=Numans');
-
         html,body{
             background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
             background-size: cover;
@@ -112,6 +111,8 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
+
+
 <div class="container">
     <div class="d-flex justify-content-center h-100">
         <div class="card">
@@ -126,6 +127,7 @@
             </div>
 
             <div class="card-body">
+
                 @include('FirstFashion.messagelogin')
                 <form action="{{route('auth.signin')}}" method="post">
                     @csrf

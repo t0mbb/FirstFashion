@@ -1,4 +1,5 @@
 <section id="container">
+
     <!--header start-->
     <header class="header fixed-top clearfix">
         <!--logo start-->
@@ -7,7 +8,19 @@
                 <b>First Fashion</b>
             </a>
         </div>
-
+<style>
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
         <div class="top-nav clearfix">
             <!--search & user info start-->
             <ul class="nav pull-right top-menu">
@@ -45,7 +58,9 @@
     <!--sidebar start-->
     <aside>
         <div id="sidebar" class="nav-collapse">
+
             <!-- sidebar menu start-->
+
             <div class="leftside-navigation">
                 <ul class="sidebar-menu" id="nav-accordion">
                     <li>

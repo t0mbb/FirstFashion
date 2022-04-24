@@ -54,7 +54,7 @@ class FirstFashionAdminController extends Controller
                     ->with('msg', '!!! You can not edit other admin !!!');
                 break;
             }
-            else
+
                 return view('FirstFashion.admin.updateAdmin',
                     [
                         'admin' => $admin[0]
@@ -123,7 +123,6 @@ class FirstFashionAdminController extends Controller
         return Validator::make(
             $request->all(),
             [
-
                 'ad_user' => ['required' ,],
                 'ad_fullname' => ['required', 'min:5'],
                 'ad_phone' => ['required', 'starts_with:0', 'digits:10'],
@@ -138,14 +137,14 @@ class FirstFashionAdminController extends Controller
                             }
                         }
                     if($n != 0) {
-                        $fail ('Your confirm password not correct');
+                        $fail ('Your password verify not correct');
                     }
             }
                 ],
             ],
             [
                 'ad_phone.starts_with' => 'Phone must start with 0.',
-                'ad_pass.required'=> 'Password confirm not be empty.',
+                'ad_pass.required'=> 'Password verify not be empty.',
                 'ad_phone.digits'=> 'Phone number must be 10 digits'
             ]
         );

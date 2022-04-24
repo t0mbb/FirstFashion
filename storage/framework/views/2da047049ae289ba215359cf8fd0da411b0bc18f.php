@@ -14,9 +14,6 @@
     </div>
     <img width="900" src="<?php echo e(asset("image/admin12.jpeg")); ?>" style ="margin-left : 480px;padding-top: 100px;">
 
-
-
-
 <?php $__env->stopSection(); ?>
 
 <?php $__env->startSection('script'); ?>

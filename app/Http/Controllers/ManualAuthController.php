@@ -15,8 +15,16 @@ class ManualAuthController extends Controller
 
     public function signin(Request $request){
         $ad_user = $request->input('ad_user');
+        $ad_p = $request->input('ad_pass');
         $ad_pass = sha1($request->input('ad_pass'));
 
+        if (empty($ad_user)) {
+            return redirect()->route('auth.ask')->withInput()->with('msg', ' Please Enter Your Username!');
+        }
+        if (empty($ad_p))
+        {
+            return redirect()->route('auth.ask')->with('msg', ' Please Enter Your Password!');
+        }
         $account = AdminRepos::getAllAdmins();
 
         $this->formValidateLogin($request)->validate(); //shortcut
@@ -61,8 +69,6 @@ class ManualAuthController extends Controller
                         }
 
                     }
-
-
                 }],
             ],
             [

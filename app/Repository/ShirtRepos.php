@@ -73,7 +73,31 @@ class ShirtRepos
         $sql .= 'from category ' ;
         $sql .= 'join shirt on category.cat_id = shirt.cat_id ';
         $sql .= 'where shirt_id = ? ';
-
         return DB::select($sql,[$shirt_id]);
+    }
+
+    public static function getShirtCoat(){
+        $sql = 'select * ';
+        $sql .= 'from shirt ';
+        $sql .= 'where cat_id = 1 ';
+        return DB::select($sql);
+    }
+    public static function getShirtPolo(){
+        $sql = 'select * ';
+        $sql .= 'from shirt ';
+        $sql .= 'where cat_id = 2 ';
+        return DB::select($sql);
+    }
+    public static function getShirtSweater(){
+        $sql = 'select * ';
+        $sql .= 'from shirt ';
+        $sql .= 'where cat_id = 3 ';
+        return DB::select($sql);
+    }
+    public static function getShirtTshirt(){
+        $sql = 'select * ';
+        $sql .= 'from shirt ';
+        $sql .= 'where cat_id = 4 ';
+        return DB::select($sql);
     }
 }

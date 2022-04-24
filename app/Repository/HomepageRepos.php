@@ -18,7 +18,6 @@ class HomepageRepos
         $sql = 'select * ';
         $sql .= 'from shirt ';
         $sql .= 'where shirt_name like ? ';
-
         return DB::select ($sql, [$name]);
     }
 

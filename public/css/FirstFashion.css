@@ -182,8 +182,8 @@ body a {
 
 a, a:hover, button, button:hover {
     text-decoration: none;
-    transition: 5s all;
-    -moz-transition: 5s all;
+    transition: 35s all;
+    -moz-transition: 35s all;
 }
 
 a {

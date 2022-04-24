@@ -1,5 +1,4 @@
 @extends('masters.adminMaster')
-
 @section('main')
 
     <div class="container">
@@ -15,9 +14,6 @@
             <b>Welcome to Admin Manager</b></h1>
     </div>
     <img width="900" src="{{asset("image/admin12.jpeg")}}" style ="margin-left : 480px;padding-top: 100px;">
-
-
-
 
 @endsection
 

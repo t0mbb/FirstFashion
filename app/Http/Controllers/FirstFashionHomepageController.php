@@ -41,13 +41,37 @@ class FirstFashionHomepageController extends Controller
                 'shirt' => $shirt
             ]);
     }
+    public function gallery(){
+        $categories = CategoryRepos::getAllCategories();
+        $shirt = ShirtRepos::getAllShirt();
+        $shirt1 = ShirtRepos::getShirtCoat();
+        $polo2 = ShirtRepos::getShirtPolo();
+        $sweater3=ShirtRepos::getShirtSweater();
+        $tshirt4=ShirtRepos::getShirtTshirt();
+        return view('FirstFashion.homepage.gallery',
+        [
+            'shirt' => $shirt,
+            'categories'=> $categories,
+            'shirt1'=> $shirt1,
+            'polo2'=> $polo2,
+            'sweater3' =>$sweater3,
+            'tshirt4' =>$tshirt4
+        ]);
+
+    }
+    public function download(){
+            $download = public_path('docs/Document.doc');
+            return response()->download($download);
+    return view('FirstFashion.homepage.detailShirt');
+    }
+
     public function detailShirt($shirt_id){
-        $category = HomepageRepos::getAllCategories();
+        $categories = HomepageRepos::getAllCategories();
         $shirt = ShirtRepos::getShirtById($shirt_id);
         return view('FirstFashion.homepage.detailShirt',
             [
-                'category' => $category,
-                'uniform' => $shirt[0]
+                'categories' => $categories,
+                'shirt' => $shirt
             ]
         );
     }
@@ -55,15 +79,12 @@ class FirstFashionHomepageController extends Controller
         $categories = HomepageRepos::getAllCategories();
         $search = (object)[
             'search' => $request->input('search'),
-        ] ;
-
+        ];
         $resultSearch = HomepageRepos::resultSearch($search);
-
         return view('FirstFashion.homepage.search',
             [
                 'resultSearch' => $resultSearch,
                 'categories' => $categories
-
             ]);
 
     }

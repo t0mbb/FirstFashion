@@ -200,6 +200,14 @@ Route::group(['prefix' => 'FirstFashion'], function (){
         'uses' => 'FirstFashionHomepageController@search',
         'as' => 'FirstFashion.search'
     ]);
+    Route::get('gallery',[
+        'uses' => 'FirstFashionHomepageController@gallery',
+        'as'=>'FirstFashion.gallery'
+    ]);
+    Route::get('download',[
+        'uses' =>'FirstFashionHomepageController@download',
+        'as'=>'FirstFashion.download'
+    ]);
 
 });
 

@@ -26,24 +26,182 @@
             <div class="col-lg-9 col-md-8 header" >
                 <div class="row">
                     <!-- search -->
-                    <div class="col-lg-9 col-sm-8 agileits_search" style="padding-left : 130px;padding-top : 10px;">
-                        <form class="form-inline" action="<?php echo e(route('FirstFashion.search')); ?>"
-                              method="get" style="max-width:600px;">
-                            <?php echo csrf_field(); ?>
-                            <input class="form-control" type="text" name="search"
-                                   placeholder="Search for shirts and more" aria-label="Search"
-                                   value="<?php echo e(old('search')?? ''); ?>">
-                            <button class="btn btn-outline-success" type="submit">
-                                <i class="bi bi-search-heart" style="font-size: 25px" aria-hidden="true"></i></button>
-                        </form>
+                    <div class="col-lg-10 search-wrapper">
+                        <style>
+                            body {
+                                background: #212129;
+                            }
+
+                            ::selection {
+                                background: #212129;
+                            }
+
+                            .search-wrapper {
+                                position: absolute;
+                                transform: translate(-50%, -50%);
+                                top:50%;
+                                left:50%;
+                            }
+                            .search-wrapper.active {}
+
+                            .search-wrapper .input-holder {
+                                height: 70px;
+                                width:70px;
+                                overflow: hidden;
+                                background: rgba(255,255,255,0);
+                                border-radius:6px;
+                                position: relative;
+                                transition: all 0.3s ease-in-out;
+                            }
+                            .search-wrapper.active .input-holder {
+                                width:450px;
+                                border-radius: 50px;
+                                background: rgba(0,0,0,0.5);
+                                transition: all .5s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+                            }
+                            .search-wrapper .input-holder .search-input {
+                                width:100%;
+                                height: 50px;
+                                padding:0px 70px 0 20px;
+                                opacity: 0;
+                                position: absolute;
+                                top:0px;
+                                left:0px;
+                                background: transparent;
+                                box-sizing: border-box;
+                                border:none;
+                                outline:none;
+                                font-family:"Open Sans", Arial, Verdana;
+                                font-size: 16px;
+                                font-weight: 400;
+                                line-height: 20px;
+                                color:#FFF;
+                                transform: translate(0, 60px);
+                                transition: all .3s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+                                transition-delay: 0.3s;
+                            }
+                            .search-wrapper.active .input-holder .search-input {
+                                opacity: 1;
+                                transform: translate(0, 10px);
+                            }
+                            .search-wrapper .input-holder .search-icon {
+                                width:70px;
+                                height:70px;
+                                border:none;
+                                border-radius:40px;
+                                background: black;
+                                padding:0px;
+                                outline:none;
+                                position: relative;
+                                z-index: 2;
+                                float:right;
+                                cursor: pointer;
+                                transition: all 0.3s ease-in-out;
+                            }
+                            .search-wrapper.active .input-holder .search-icon {
+                                width: 50px;
+                                height:50px;
+                                margin: 10px;
+                                border-radius: 30px;
+                            }
+                            .search-wrapper .input-holder .search-icon span {
+                                width:22px;
+                                height:22px;
+                                display: inline-block;
+                                vertical-align: middle;
+                                position:relative;
+                                transform: rotate(45deg);
+                                transition: all .4s cubic-bezier(0.650, -0.600, 0.240, 1.650);
+                            }
+                            .search-wrapper.active .input-holder .search-icon span {
+                                transform: rotate(-45deg);
+                            }
+                            .search-wrapper .input-holder .search-icon span::before, .search-wrapper .input-holder .search-icon span::after {
+                                position: absolute;
+                                content:'';
+                            }
+                            .search-wrapper .input-holder .search-icon span::before {
+                                width: 4px;
+                                height: 11px;
+                                left: 9px;
+                                top: 18px;
+                                border-radius: 2px;
+                                background: #FE5F55;
+                            }
+                            .search-wrapper .input-holder .search-icon span::after {
+                                width: 14px;
+                                height: 14px;
+                                left: 0px;
+                                top: 0px;
+                                border-radius: 16px;
+                                border: 4px solid #FE5F55;
+                            }
+                            .search-wrapper .close {
+                                position: absolute;
+                                z-index: 1;
+                                top:24px;
+                                right:330px;
+                                width:25px;
+                                height:25px;
+                                cursor: pointer;
+                                transform: rotate(-180deg);
+                                transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+                                transition-delay: 0.2s;
+                            }
+                            .search-wrapper.active .close {
+
+                                transform: rotate(45deg);
+                                transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+                                transition-delay: 0.5s;
+                            }
+                            .search-wrapper .close::before, .search-wrapper .close::after {
+                                position:absolute;
+                                content:'';
+                                background: #FE5F55;
+                                border-radius: 2px;
+                            }
+                            .search-wrapper .close::before {
+                                width: 5px;
+                                height: 25px;
+                                left: 10px;
+                                top: 0px;
+                            }
+                            .search-wrapper .close::after {
+                                width: 25px;
+                                height: 5px;
+                                left: 0px;
+                                top: 10px;
+                            }
+                        </style>
+                        <div class="input-holder">
+                            <form action="<?php echo e(route('FirstFashion.search')); ?>" method="GET">
+                            <script type="text/javascript">function searchToggle(obj, evt){
+                                    var container = $(obj).closest('.search-wrapper');
+                                    if(!container.hasClass('active')){
+                                        container.addClass('active');
+                                        evt.preventDefault();
+                                    }
+                                    else if(container.hasClass('active') && $(obj).closest('.input-holder').length == 0){
+                                        container.removeClass('active');
+                                        // clear input
+                                        container.find('.search-input').val('');
+                                    }
+                                }
+                            </script>
+                            <input type="text" class="search-input" name="search" placeholder="Type name of shirts" value="<?php echo e(old('search')); ?>">
+                            <button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+                            </form>
+                        </div>
+                        <span class="close" onclick="searchToggle(this, event);"></span>
+
                     </div>
-                    <!-- //search -->
-                    <!-- cart details -->
+
+
                     <div
-                        class="col-lg-3 col-sm-4 top_nav_right text-center mt-sm-0 mt-2 d-flex align-items-center justify-content-between">
-                        <div class="col-lg-8 col-sm-7 header-right ml-auto text-sm-right text-center"
+                        class="top_nav_right text-center mt-sm-0 mt-2 d-flex align-items-center justify-content-between">
+                        <div class="col-lg-2 header-right ml-auto text-sm-right text-center"
                              style="padding-left : 50px;padding-top: 5px;">
-                            
+
                             <ul class="top-header-lists">
                                 <li style="list-style: none">
                                     <a href="<?php echo e(route('FirstFashion.registerCustomer')); ?>"
@@ -56,7 +214,7 @@
 
                     </div>
                     <!-- //cart details -->
-                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -82,7 +240,26 @@
                             <b>Categories</b>
                         </a>
                         <div class="dropdown-menu " aria-labelledby="navbarDropdown"
-                             style="background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);text-align: left; margin-left: 50px; padding-left: -50px">
+                             style="background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);text-align: left; margin-left: 50px;
+                             padding-left: -50px;background-size: 400% 100%;
+                            animation: gradient 7s ease infinite;">
+                            <style>
+                                @keyframes  gradient {
+                                    0% {
+                                        background-position: 0% 50%;
+                                    }
+                                    50% {
+                                        background-position: 100% 50%;
+                                    }
+                                    100% {
+                                        background-position: 0% 50%;
+                                    }
+                                }
+                            </style>
+
+
+
+
                             <div class="agile_inner_drop_nav_info p-1">
                                 <div class="row">
                                     <div class="col-sm-6 multi-gd-img">
@@ -114,11 +291,11 @@
                             </div>
                         </div>
 
-
                     </li>
                     <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a style="font-size: 20px" class="nav-link"
-                        ><b>About Us</b></a>
+                        <a style="font-size: 20px" class="nav-link" role="button"
+                           href="<?php echo e(route('FirstFashion.gallery')); ?>"
+                        ><b>Gallery</b></a>
                     </li>
                     <li class="nav-item">
                         <a style="font-size: 20px" class="nav-link"
@@ -126,7 +303,7 @@
                     </li>
                     <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
                         <a style="font-size: 20px" class="nav-link"
-                        ><b>Feedback</b></a>
+                        ><b>About Us</b></a>
                     </li>
                 </ul>
             </div>

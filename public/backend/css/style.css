@@ -47,7 +47,9 @@ body a:hover{
     position: relative;
 }
 .leftside-navigation,.right-stat-bar{
-    background: -webkit-linear-gradient(left, rgb(255, 99, 71) , rgb(255, 99, 71) );
+    background: linear-gradient(-85deg, #d43f3a, #f0ad4e, #29ccee, #23d5ab);
+    background-size: 400% 100%;
+    animation: gradient 8s ease infinite;
     height: 100%;
 }
 .right-stat-bar ul {
@@ -128,10 +130,10 @@ ul.sidebar-menu li ul.sub li a {
     -o-transition:all 0.3s ease;
     -ms-transition:all 0.3s ease;
     transition:all 0.3s ease;
-    color:#fff;
+
 }
 ul.sidebar-menu li ul.sub li a:hover,ul.sidebar-menu li ul.sub li.active a {
-    color:#fff;
+
     -webkit-transition:all 0.3s ease;
     -moz-transition:all 0.3s ease;
     -o-transition:all 0.3s ease;
@@ -215,7 +217,9 @@ ul.sidebar-menu li a.active i {
     left:0;
     right:0;
     z-index:1002;
-    background: -webkit-linear-gradient(left, rgb(255, 99, 71), rgb(255, 99, 71));
+    background: linear-gradient(-145deg, #ee7752, #f0ad4e, #29ccee, #23d5ab);
+    background-size: 400% 100%;
+    animation: gradient 8s ease infinite;
     -webkit-transition:all .3s ease-in-out;
     -moz-transition:all .3s ease-in-out;
     -o-transition:all .3s ease-in-out;
@@ -235,7 +239,9 @@ ul.sidebar-menu li a.active i {
     width:100%;
 }
 .brand {
-    background: rgb(255, 99, 71);
+    background: linear-gradient(-45deg, #ee7752, #f0ad4e, #29ccee, #23d5ab);
+    background-size: 400% 100%;
+    animation: gradient 8s ease infinite;
     border: 1px outset black;
     float:left;
     width:240px;

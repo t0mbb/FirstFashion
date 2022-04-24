@@ -9,6 +9,8 @@
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
           integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
           crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js">
+
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
@@ -18,15 +20,25 @@
     <link rel="stylesheet" href="<?php echo e(asset('css/FirstFashion.css')); ?>">
     <script src="https://kit.fontawesome.com/bd1378526e.js" crossorigin="anonymous"></script>
 
-
+    <script src="<?php echo e(asset('backend/js/detail.js')); ?>"></script>
     <title>First Fashion</title>
 </head>
-<body style="
-  background: linear-gradient(-80deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 100% 150%;
-  animation: gradient 5s ease infinite;
-}
-" >
+<style>
+    @keyframes  gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
+<body style="background: linear-gradient(-20deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+          background-size: 150% 100%;
+          height: 100vh;">
 
 <header>
     <?php echo $__env->make('partials.homepageNav', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
@@ -48,6 +60,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
+
 </body>
 </html>
 <?php /**PATH /Users/t0mbb./Documents/c03/FirstFashion/resources/views/masters/homepageMaster.blade.php ENDPATH**/ ?>
