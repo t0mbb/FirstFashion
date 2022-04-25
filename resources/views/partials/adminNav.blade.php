@@ -29,20 +29,17 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle"
                        style="padding: 2px;
-                              margin-right: 20px;">
+                              margin-right: 10px;">
                         <img alt="" src="{{asset('backend/images/2.png')}}">
                         <span class="username">
                             {{\Illuminate\Support\Facades\Session::has('ad_user')?
                           \Illuminate\Support\Facades\Session::get('ad_user') : ''}}</span>
                         <b class="caret"></b>
                     </a>
-                    <ul class="dropdown-menu extended logout">
-                        <li><a href="#" style="font-size: 17px">
+                    <ul class="dropdown-menu extended logout" style="margin-right: 10px;">
+                        <li><a href="{{route('FirstFashion.homepage')}}" style="font-size: 17px">
                                 <i class=" fa fa-suitcase" style="font-size: 17px"></i>
-                                Profile</a></li>
-                        <li><a href="#" style="font-size: 17px">
-                                <i class="fa-solid fa-gear" style="font-size: 17px"></i>
-                                Settings</a></li>
+                               HomePage</a></li>
                         <li><a href="{{route('auth.signout')}}" style="font-size: 17px">
                                 <i class="fa-solid fa-right-from-bracket" style="font-size: 17px"></i>
                                 Log Out</a></li>
@@ -108,6 +105,12 @@
                             <li><a href="{{route('FirstFashion.shirt_manager')}}" style="font-size: 20px">Shirt Manager</a></li>
                             <li><a href="{{route('FirstFashion.createShirt')}}" style="font-size: 20px">New Shirt</a></li>
                         </ul>
+                    </li>
+                    <li>
+                        <a href="{{route('FirstFashion.AdminMail')}}" style="font-size: 25px">
+                            <i class="fa fa-envelope" style="font-size: 25px"></i>
+                            <span>Mail</span>
+                        </a>
                     </li>
                 </ul>
             </div>

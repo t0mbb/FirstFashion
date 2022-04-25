@@ -242,7 +242,7 @@
                         <div class="dropdown-menu " aria-labelledby="navbarDropdown"
                              style="background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);text-align: left; margin-left: 50px;
                              padding-left: -50px;background-size: 400% 100%;
-                            animation: gradient 7s ease infinite;">
+                            animation: gradient 3s ease infinite;">
                             <style>
                                 @keyframes gradient {
                                     0% {
@@ -298,12 +298,8 @@
                         ><b>Gallery</b></a>
                     </li>
                     <li class="nav-item">
-                        <a style="font-size: 20px" class="nav-link"
+                        <a href="{{route('FirstFashion.contactUs')}}" style="font-size: 20px" class="nav-link"
                         ><b>Contact Us</b></a>
-                    </li>
-                    <li class="nav-item mr-lg-2 mb-lg-0 mb-2">
-                        <a style="font-size: 20px" class="nav-link"
-                        ><b>About Us</b></a>
                     </li>
                 </ul>
             </div>

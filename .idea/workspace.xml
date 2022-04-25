@@ -2,8 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cecb261-4eb9-451a-9e3c-837c0633ef28" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/views/FirstFashion/admin/mail.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/contactUs.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/modal.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Ufnr0ZzwjVOVl1GzAapJSPJKXMHDhG6wTm270oBT" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/sessions/Ufnr0ZzwjVOVl1GzAapJSPJKXMHDhG6wTm270oBT" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionAdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionCustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionCustomerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionHomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionHomepageController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionShirtController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionShirtController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/AdminRepos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/AdminRepos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/HomepageRepos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/HomepageRepos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Repository/ShirtRepos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/ShirtRepos.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/detailShirt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/detailShirt.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/gallery.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/masters/homepageMaster.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/masters/homepageMaster.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/adminNav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/adminNav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/partials/homepageNav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/homepageNav.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/JSIJxiRAOM4r36jXyC8dYTxvRSW2doRDlRSNgctb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/LVw3ZB3NxbgL8xdizjFAk42i2V6sCucSOQOzyrTB" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/Ufnr0ZzwjVOVl1GzAapJSPJKXMHDhG6wTm270oBT" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/YZgzPQAOXuXVDJW1gqAz6AkseguZe2IL60rW826V" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/37630b3c0cce28e0c25d3b3cd698b24ab590c551.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/37630b3c0cce28e0c25d3b3cd698b24ab590c551.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/66e204853c25b07f1f7cf9b8a43e10f955004c82.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/66e204853c25b07f1f7cf9b8a43e10f955004c82.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/68bd25ffb4b588873d5e543d75366f9140880092.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/68bd25ffb4b588873d5e543d75366f9140880092.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/b925e1f7268e66958eab54a311a522056a11bcfb.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/b925e1f7268e66958eab54a311a522056a11bcfb.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/e2e4f0391c5823034a6502283c611fada3b0634e.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/e2e4f0391c5823034a6502283c611fada3b0634e.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +220,7 @@
       <workItem from="1650614611371" duration="13979000" />
       <workItem from="1650647518541" duration="57832000" />
       <workItem from="1650781394915" duration="13645000" />
-      <workItem from="1650796161817" duration="3835000" />
+      <workItem from="1650796161817" duration="25661000" />
     </task>
     <servers />
   </component>
@@ -233,8 +258,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="php">
           <url>file://$PROJECT_DIR$/resources/views/FirstFashion/homepage/detailShirt.blade.php</url>
-          <line>899</line>
+          <line>907</line>
           <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/FirstFashion/homepage/detailShirt.blade.php</url>
+          <line>790</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/FirstFashion/admin/mail.blade.php</url>
+          <line>26</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/resources/views/FirstFashion/homepage/gallery.blade.php</url>
+          <line>499</line>
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

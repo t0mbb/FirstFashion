@@ -37,7 +37,7 @@
     }
 </style>
 <body style="background: linear-gradient(-20deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-          background-size: 150% 100%;
+          background-size: 200% 100%;
           height: 100vh;">
 
 <header>
@@ -60,7 +60,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
         integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
         crossorigin="anonymous"></script>
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 
 </body>

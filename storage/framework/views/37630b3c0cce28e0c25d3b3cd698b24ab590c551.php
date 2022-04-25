@@ -1,4 +1,5 @@
 <?php $__env->startSection('main'); ?>
+
     <style type="text/css">
 
         @import  url('https://fonts.googleapis.com/css?family=Dosis:400,600,700,800');
@@ -792,24 +793,7 @@
             <div class="bg-shape">
                 <img src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1536405214/starwars/logo.webp" alt="">
             </div>
-            <div id="myModal" class="modal fade">
-                <div class="modal-dialog modal-confirm">
-                    <div class="modal-content" style="margin-top: 137px;">
-                        <div class="modal-header">
-                            <div class="icon-box">
-                                <i class="material-icons">&#xE876;</i>
-                            </div>
-                            <h4 class="modal-title w-100">Awesome!</h4>
-                        </div>
-                        <div class="modal-body">
-                            <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
-                        </div>
-                        <div class="modal-footer">
-                            <button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+
 
             <?php $__currentLoopData = $shirt; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $s): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
             <div class="product-img">
@@ -817,6 +801,30 @@
                     <img src="<?php echo e(asset('storage/images/shirt/' .$s->shirt_image)); ?>" alt="star wars" class="product-img__img">
                 </div>
             </div>
+
+
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog modal-confirm">
+                        <div class="modal-content" style="margin-top: 137px;">
+                            <div class="modal-header">
+                                <div class="icon-box">
+                                    <i class="material-icons">&#xE876;</i>
+                                </div>
+                                <h4 class="modal-title w-100">Awesome!</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p class="text-center">Your booking has been confirmed. Check your email for detials.</p>
+                            </div>
+                            <form action="<?php echo e(route('FirstFashion.mail', ['shirt_id' => $s->shirt_id])); ?>" method="post">
+                                <?php echo csrf_field(); ?>
+                                <input type="hidden" name="shirt_id" value="<?php echo e($s->shirt_id); ?>">
+                            <div class="modal-footer">
+                                <button class="btn btn-success btn-block"  type="submit" href="<?php echo e(route('FirstFashion.mail', ['shirt_id' => $s->shirt_id])); ?>">OK</button>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
 
 
             <div class="product-slider" >
@@ -828,7 +836,7 @@
                                 <h1 class="product-slider__title">
                                     <?php echo e($s->shirt_name); ?> <br>
                                 </h1>
-                                <span class="product-slider__price"><?php echo e($s->shirt_price); ?>$</span>
+                                <span class="product-slider__price" style="color: greenyellow"><?php echo e($s->shirt_price); ?>$</span>
                                 <div class="product-ctr">
                                     <div class="product-labels">
                                         <div class="product-labels__title">SIZE</div>
@@ -870,7 +878,7 @@
                                                 </svg>
                                             </div>
                                             <div class="product-inf__percent-txt">
-                                                80%
+                                                75%
                                             </div>
                                         </div>
                                         <span class="product-inf__title">Hot Selling Percent</span>
@@ -906,7 +914,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
     <script type="text/javascript">
         var swiper = new Swiper('.product-slider', {
             spaceBetween: 30,
@@ -963,8 +971,9 @@
             $(this).find('.heart').toggleClass("is-active");
         });
     </script>
+
 <?php $__env->stopSection(); ?>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js"></script>
 

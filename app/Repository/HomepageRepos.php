@@ -28,4 +28,10 @@ class HomepageRepos
 
         return DB::select($sql, [$cat_id]);
     }
+    public static function InsertMail($shirts){
+        $sql = 'insert into mail ';
+        $sql .= '(shirt_name, shirt_price, shirt_image, shirt_size ) ';
+        $sql .= 'values (?, ?, ?, ?) ';
+        return DB::insert($sql , [$shirts[0]->shirt_name, $shirts[0]->shirt_price, $shirts[0]->shirt_image, $shirts[0]->shirt_size]);
+    }
 }

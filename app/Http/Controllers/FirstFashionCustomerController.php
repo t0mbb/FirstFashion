@@ -136,7 +136,13 @@ class FirstFashionCustomerController extends Controller
             ],
             [
                 //change validation message
-                'cus_phone.starts_with' => 'Phone must start with 0.'
+                'cus_phone.starts_with' => 'Your phone must start with 0.',
+                'cus_name.required' => 'You have not entered your name',
+                'cus_phone.required' => 'You have not entered your phone',
+                'cus_address.required' => 'You have not entered your address',
+                'cus_dob.required' => 'You have not entered your birthday',
+                'cus_email.required' => 'You have not entered your email',
+                'cus_gender.required' => 'You have not choose your gender',
             ]
         );
     }

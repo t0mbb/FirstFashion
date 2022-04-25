@@ -85,6 +85,10 @@ Route::group(['prefix' => 'FirstFashion'], function (){
             'uses' => 'FirstFashionAdminController@destroyAdmin',
             'as' => 'FirstFashion.destroyAdmin'
         ]);
+        Route::get('mail_manager',[
+            'uses' => 'FirstFashionAdminController@AdminMail',
+            'as' => 'FirstFashion.AdminMail'
+        ]);
 
         //Route Category
         // category manager
@@ -163,6 +167,7 @@ Route::group(['prefix' => 'FirstFashion'], function (){
             'uses' => 'FirstFashionShirtController@destroyShirt',
             'as' => 'FirstFashion.destroyShirt'
         ]);
+
     });
     Route::get('registerCustomer', [
         'uses' => 'FirstFashionCustomerController@registerCustomer',
@@ -196,6 +201,10 @@ Route::group(['prefix' => 'FirstFashion'], function (){
         'uses' => 'FirstFashionHomepageController@detailShirt',
         'as' => 'FirstFashion.detailShirt'
     ]);
+    Route::post('detailShirt/{shirt_id}',[
+        'uses'=>'FirstFashionHomepageController@mail',
+        'as' => 'FirstFashion.mail'
+    ]);
     Route::get('search',[
         'uses' => 'FirstFashionHomepageController@search',
         'as' => 'FirstFashion.search'
@@ -208,6 +217,11 @@ Route::group(['prefix' => 'FirstFashion'], function (){
         'uses' =>'FirstFashionHomepageController@download',
         'as'=>'FirstFashion.download'
     ]);
+    Route::get('contactUs', [
+        'uses' => 'FirstFashionHomepageController@contactUs',
+        'as' => 'FirstFashion.contactUs'
+    ]);
+
 
 });
 

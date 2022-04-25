@@ -159,10 +159,7 @@ class FirstFashionShirtController extends Controller
             //id in query string must match id in hidden input
             return redirect()->action('FirstFashionShirtController@shirt_manager');
         }
-
         ShirtRepos::deleteShirt($shirt_id);
-
-
         return redirect()->action('FirstFashionShirtController@shirt_manager')
         ->with('msg', '!!! Delete successfully !!!');
     }
@@ -182,4 +179,5 @@ class FirstFashionShirtController extends Controller
             ]
         );
     }
+
 }

@@ -40,11 +40,10 @@ class AdminRepos
 
         DB::delete($sql, [$ad_id]);
     }
+    public static function getAllMail(){
+        $sql = 'select * from mail ';
 
-//    public static function loginAdmin($ad_user){
-//        $sql = 'select ad_user, ad_pass ';
-//        $sql .= 'where ad_user = ? ';
-//
-//        DB::select($sql, [$ad_user]);
-//    }
+        return DB::select($sql);
+    }
+
 }

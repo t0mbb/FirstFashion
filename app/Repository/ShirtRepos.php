@@ -100,4 +100,5 @@ class ShirtRepos
         $sql .= 'where cat_id = 4 ';
         return DB::select($sql);
     }
+
 }

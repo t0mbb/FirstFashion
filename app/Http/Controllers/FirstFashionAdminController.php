@@ -116,7 +116,12 @@ class FirstFashionAdminController extends Controller
             ->with('msg', 'Delete Admin Successfully');
     }
 
-
+    public function AdminMail(){
+        $mails = AdminRepos::getAllMail();
+        return view('FirstFashion.admin.mail',[
+            'mail'=> $mails
+        ]);
+    }
 
 
     private function formValidateAdmin ($request){

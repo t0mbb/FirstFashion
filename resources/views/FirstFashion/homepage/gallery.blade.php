@@ -33,14 +33,16 @@
 
 <!------ Include the above in your HEAD tag ---------->
 <style>
-
+    main{
+        background-color :black;
+    }
     .gallery-title
     {
         text-align: center;
         font-weight: 500;
         margin-bottom: 70px;
         font-size: 40px;
-        color: #080808;
+        color:whitesmoke;
         text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
     }
     .gallery-title:after {
@@ -59,8 +61,8 @@
         text-align: center;
         color: black;
         margin-bottom: 30px;
-        background: linear-gradient(-30deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-        background-size: 300% 100%;
+        background: linear-gradient(-30deg, #ee7752, #FFC312, #ffff00, #23d5ab);
+        background-size: 100% 200%;
 
         text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
         margin-left: 15px;
@@ -146,6 +148,7 @@
         border-radius: 0 0 15px 15px;
         padding: 100px 20px 20px 20px;
         color: whitesmoke;
+        text-align :center;
         font-family: 'Open Sans', sans-serif;
         text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
         font-size: 27px;
@@ -472,7 +475,7 @@
 
 </style>
 
-<div class="container" style="margin-top: -70px;">
+<div class="container" style="margin-top: -75px;">
     <div class="row">
         <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12" >
             <h1 class="gallery-title" style="margin-bottom: 10px;">Gallery</h1>
@@ -498,8 +501,14 @@
                 color: whitesmoke;
                 font-size: 20px;
                 margin-top:10px;">
-                    {{$s->shirt_name}}
-                    <small>{{$s->shirt_price}}$</small>
+                    <a style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
+                color: whitesmoke;
+                font-size: 20px;
+                margin-top:10px;" href="{{route('FirstFashion.detailShirt', ['shirt_id' => $s->shirt_id])}}">{{$s->shirt_name}}</a>
+                    <small><a style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
+                color: greenyellow;
+                font-size: 20px;
+                margin-top:10px;" href="{{route('FirstFashion.detailShirt', ['shirt_id' => $s->shirt_id])}}">{{$s->shirt_price}}$</a></small>
                 </figcaption>
             </figure>
         </div>
@@ -513,8 +522,14 @@
                 color: whitesmoke;
                 font-size: 20px;
                 margin-top:10px;">
-                        {{$s->shirt_name}}
-                        <small>{{$s->shirt_price}}$</small>
+                        <a style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
+                color: whitesmoke;
+                font-size: 20px;
+                margin-top:10px;" href="{{route('FirstFashion.detailShirt', ['shirt_id' => $s->shirt_id])}}">{{$s->shirt_name}}</a>
+                        <small><a style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
+                color: greenyellow;
+                font-size: 20px;
+                margin-top:10px;" href="{{route('FirstFashion.detailShirt', ['shirt_id' => $s->shirt_id])}}">{{$s->shirt_price}}$</a></small>
                     </figcaption>
                 </figure>
             </div>
@@ -528,8 +543,15 @@
                 color: whitesmoke;
                 font-size: 20px;
                 margin-top:10px;">
-                        {{$s->shirt_name}}
-                        <small>{{$s->shirt_price}}$</small>
+                        <a style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
+                color: whitesmoke;
+                font-size: 20px;
+                margin-top:10px;" href="{{route('FirstFashion.detailShirt', ['shirt_id' => $s->shirt_id])}}">{{$s->shirt_name}}</a>
+                        <small><a style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
+                color: greenyellow;
+                font-size: 20px;
+                margin-top:10px;" href="{{route('FirstFashion.detailShirt', ['shirt_id' => $s->shirt_id])}}">{{$s->shirt_price}}$</a></small>
+
                     </figcaption>
                 </figure>
             </div>
@@ -543,8 +565,16 @@
                 color: whitesmoke;
                 font-size: 20px;
                 margin-top:10px;">
-                        {{$s->shirt_name}}
-                        <small>{{$s->shirt_price}}$</small>
+                        <a style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
+                color: whitesmoke;
+                font-size: 20px;
+                margin-top:10px;" href="{{route('FirstFashion.detailShirt', ['shirt_id' => $s->shirt_id])}}">{{$s->shirt_name}}</a>
+                        <small><a style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
+                color: greenyellow;
+                font-size: 20px;
+                margin-top:10px;" href="{{route('FirstFashion.detailShirt', ['shirt_id' => $s->shirt_id])}}">{{$s->shirt_price}}$</a></small>
+
+
                     </figcaption>
                 </figure>
             </div>

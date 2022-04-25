@@ -6,6 +6,7 @@ use App\Repository\CategoryRepos;
 use App\Repository\HomepageRepos;
 use App\Repository\ShirtRepos;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class FirstFashionHomepageController extends Controller
 {
@@ -75,6 +76,27 @@ class FirstFashionHomepageController extends Controller
             ]
         );
     }
+    public function mail ($shirt_id){
+        $shirts = ShirtRepos::getShirtById($shirt_id);
+        HomepageRepos::InsertMail($shirts);
+        $categories = HomepageRepos::getAllCategories();
+        $shirt = ShirtRepos::getShirtById($shirt_id);
+        return view('FirstFashion.homepage.detailShirt',
+            [
+                'categories' => $categories,
+                'shirt' => $shirt
+            ]
+        );
+    }
+
+    public function contactUs(){
+        $categories = CategoryRepos::getAllCategories();
+        return view('FirstFashion.homepage.contactUs',
+            [
+                'categories' => $categories
+            ]);
+    }
+
     public function search(Request $request){
         $categories = HomepageRepos::getAllCategories();
         $search = (object)[
@@ -88,4 +110,5 @@ class FirstFashionHomepageController extends Controller
             ]);
 
     }
+
 }
