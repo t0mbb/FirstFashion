@@ -46,7 +46,7 @@
             <option value="<?php echo e(old('cat_id')?? $c->cat_id); ?>"
                 <?php echo e(($pId != null && $c->cat_id == $pId) ? 'selected' : ''); ?>
 
-            ><?php echo e(old('cat_id')?? $c->cat_name); ?></option>
+            ><?php echo e(old('cat_name')?? $c->cat_name); ?></option>
         <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
     </select>
 </div>

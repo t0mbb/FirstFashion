@@ -127,15 +127,16 @@ class FirstFashionCustomerController extends Controller
         return Validator::make(
             $request->all(),
             [
-                'cus_name' => ['required'],
+                'cus_name' => ['required', 'max:20', 'regex:/^[a-zA-Z]+$/u'],
                 'cus_gender' => ['required'],
                 'cus_phone' => ['required', 'starts_with:0', 'digits:10'],
                 'cus_address' => ['required'],
-                'cus_dob' => ['required', 'date'],
+                'cus_dob' => ['required', 'date' , 'after_or_equal:1920-01-01'],
                 'cus_email' => ['required', 'email']
             ],
             [
                 //change validation message
+                'cus_name.regex' =>'Your input name not correct',
                 'cus_phone.starts_with' => 'Your phone must start with 0.',
                 'cus_name.required' => 'You have not entered your name',
                 'cus_phone.required' => 'You have not entered your phone',
@@ -143,6 +144,7 @@ class FirstFashionCustomerController extends Controller
                 'cus_dob.required' => 'You have not entered your birthday',
                 'cus_email.required' => 'You have not entered your email',
                 'cus_gender.required' => 'You have not choose your gender',
+                'cus_dob.after_or_equal' => 'You must input date of time 1920-01-01'
             ]
         );
     }

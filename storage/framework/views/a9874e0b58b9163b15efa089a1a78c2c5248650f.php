@@ -19,7 +19,7 @@
                 <th scope="col">Full Name</th>
                 <th scope="col">&nbsp;</th>
                 <th scope="col">&nbsp;</th>
-                <th scope="col">&nbsp;</th>
+
             </tr>
             </thead>
             <tbody>
@@ -36,9 +36,7 @@
                            href="<?php echo e(route('FirstFashion.editAdmin', ['ad_id' => $ad->ad_id])); ?>"
                         ><b>EDIT</b></a>
                     </td>
-                    <td><a type="button" class="btn btn-danger btn-sm" style="font-size: 15px"
-                           href="<?php echo e(route('FirstFashion.confirmAdmin', ['ad_id' => $ad->ad_id])); ?>"
-                        ><b>DELETE</b></a></td>
+
                 </tr>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
             </tbody>

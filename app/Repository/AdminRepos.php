@@ -28,10 +28,10 @@ class AdminRepos
     }
     public static function updateAdmin($admin){
         $sql = 'update admin ';
-        $sql .= 'set ad_fullname = ?, ad_phone = ?, ad_email = ?, ad_user = ? ';
+        $sql .= 'set ad_fullname = ?, ad_phone = ?, ad_email = ? ';
         $sql .= 'where ad_id = ? ';
 
-        DB::update($sql, [$admin->ad_fullname, $admin->ad_phone, $admin->ad_email, $admin->ad_user, $admin->ad_id]);
+        DB::update($sql, [$admin->ad_fullname, $admin->ad_phone, $admin->ad_email, $admin->ad_id]);
 
     }
     public static function deleteAdmin($ad_id){

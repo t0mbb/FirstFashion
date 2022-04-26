@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Repository\AdminRepos;
+use App\Repository\HomepageRepos;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Validator;
@@ -72,7 +73,6 @@ class FirstFashionAdminController extends Controller
         }
         $admin = (object)[
             'ad_id' => $request->input('ad_id'),
-            'ad_user' => $request->input('ad_user'),
             'ad_pass' => sha1($request->input('ad_pass')),
             'ad_fullname' => $request->input('ad_fullname'),
             'ad_phone' => $request->input('ad_phone'),
@@ -122,13 +122,18 @@ class FirstFashionAdminController extends Controller
             'mail'=> $mails
         ]);
     }
-
+    public function MailAdminContact(){
+        $contact = HomepageRepos::MailPull();
+        return view('FirstFashion.admin.mailContact',[
+            'contact' => $contact
+        ]);
+    }
 
     private function formValidateAdmin ($request){
         return Validator::make(
             $request->all(),
             [
-                'ad_user' => ['required' ,],
+
                 'ad_fullname' => ['required', 'min:5'],
                 'ad_phone' => ['required', 'starts_with:0', 'digits:10'],
                 'ad_email' => ['required', 'email'],

@@ -91,24 +91,45 @@ class FirstFashionHomepageController extends Controller
 
     public function contactUs(){
         $categories = CategoryRepos::getAllCategories();
-        return view('FirstFashion.homepage.contactUs',
-            [
-                'categories' => $categories
+
+        return view(
+            'FirstFashion.homepage.contactUs',
+            ['contact' => (object)[
+                'name' => '',
+                'email'=> '',
+                'phone'=> '',
+                'gender'=> '',
+                'message'=>'',
+            ],
+                "categories" => $categories
             ]);
     }
+    public function MailContact(Request $request){
+        $contact = (object)[
+            'name' => $request->input('name'),
+            'email' => $request->input('email'),
+            'phone' => $request->input('phone'),
+            'gender' => $request->input('gender'),
+            'message' => $request->input('message'),
+        ];
+          HomepageRepos::MailInsert($contact);
+        return redirect()->action('FirstFashionHomepageController@contactUs')
+            ->with('msg', 'Send Message Successfully');;
+    }
+
 
     public function search(Request $request){
         $categories = HomepageRepos::getAllCategories();
         $search = (object)[
             'search' => $request->input('search'),
         ];
+
         $resultSearch = HomepageRepos::resultSearch($search);
         return view('FirstFashion.homepage.search',
             [
                 'resultSearch' => $resultSearch,
                 'categories' => $categories
             ]);
-
     }
 
 }

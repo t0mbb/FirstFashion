@@ -34,4 +34,14 @@ class HomepageRepos
         $sql .= 'values (?, ?, ?, ?) ';
         return DB::insert($sql , [$shirts[0]->shirt_name, $shirts[0]->shirt_price, $shirts[0]->shirt_image, $shirts[0]->shirt_size]);
     }
+    public static function MailInsert($contact){
+        $sql = 'insert into contact ';
+        $sql .= '(name, email , phone , gender , message ) ';
+        $sql .= 'values ( ? , ? , ? , ? , ? ) ';
+        return DB::insert($sql , [$contact->name , $contact->email , $contact->phone , $contact->gender , $contact->message]);
+    }
+    public static function MailPull(){
+        $sql = 'select * from contact ';
+        return DB::select($sql);
+    }
 }

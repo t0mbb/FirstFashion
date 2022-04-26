@@ -1,8 +1,5 @@
 <input type="hidden" name="ad_id" value="<?php echo e(old('ad_id')?? $admin->ad_id); ?>">
-<div class="form-group" style="margin-left: 100px">
-    <label style="color: rgb(255,71,91); font-size: 30px" for="ad_user" class="font-weight-bold">Username</label>
-    <input readonly type="text" class="form-control" id="ad_user" name="ad_user" value="<?php echo e(old('ad_user')?? $admin->ad_user); ?>">
-</div>
+
 
 <div class="form-group" style="margin-left: 100px">
     <label style="color: rgb(255,71,91); font-size: 30px" for="ad_fullname" class="font-weight-bold">Full Name</label>

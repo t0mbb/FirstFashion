@@ -210,7 +210,6 @@
                                     <input type="date" id="cus_dob" name="cus_dob" class="input--style-4"
                                            placeholder="Date of Birth"
                                            value="{{old('cus_dob')?? $customer->cus_dob}}">
-                                    <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i>
                                 </div>
                             </div>
                         </div>

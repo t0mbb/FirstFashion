@@ -1,3 +1,5 @@
+
+
 <section id="container">
 
     <!--header start-->
@@ -39,11 +41,12 @@
                     <ul class="dropdown-menu extended logout" style="margin-right: 10px;">
                         <li><a href="<?php echo e(route('FirstFashion.homepage')); ?>" style="font-size: 17px">
                                 <i class=" fa fa-suitcase" style="font-size: 17px"></i>
-                               HomePage</a></li>
+                               Homepage</a></li>
                         <li><a href="<?php echo e(route('auth.signout')); ?>" style="font-size: 17px">
                                 <i class="fa-solid fa-right-from-bracket" style="font-size: 17px"></i>
                                 Log Out</a></li>
                     </ul>
+
                 </li>
                 <!-- user login dropdown end -->
 
@@ -108,6 +111,12 @@
                     </li>
                     <li>
                         <a href="<?php echo e(route('FirstFashion.AdminMail')); ?>" style="font-size: 25px">
+                            <i class="fa fa-envelope" style="font-size: 25px"></i>
+                            <span>Mail</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="<?php echo e(route('FirstFashion.MailAdminContact')); ?>" style="font-size: 25px">
                             <i class="fa fa-envelope" style="font-size: 25px"></i>
                             <span>Mail</span>
                         </a>

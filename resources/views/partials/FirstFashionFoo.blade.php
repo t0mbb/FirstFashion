@@ -15,9 +15,16 @@
 
         <!-- Right -->
         <div>
+            <a href="https://www.facebook.com/">
             <button type="button" class="btn btn-primary">
                 <i class="bi bi-facebook"><b> Facebook</b></i>
             </button>
+            </a>
+            <a href="https://github.com/t0mbb/FirstFashion">
+                <button type="button" class="btn btn-success">
+                    <i class="bi bi-github"><b> Github</b></i>
+                </button>
+            </a>
             <button type="button" class="btn btn-info">
                 <i class="bi bi-twitter"><b> Twitter</b></i>
             </button>
@@ -30,9 +37,7 @@
             <button type="button" class="btn btn-primary">
                 <i class="bi bi-linkedin"><b> LinkedIn</b></i>
             </button>
-            <button type="button" class="btn btn-success">
-                <i class="bi bi-github"><b> Github</b></i>
-            </button>
+
         </div>
         <!-- Right -->
     </section>
@@ -63,18 +68,13 @@
                     <h6 class="text-uppercase fw-bold mb-4">
                         Categories
                     </h6>
+                    @foreach($categories as $c)
                     <p>
-                        <i class="fa-solid fa-shirt">  C o a t</i>
+                        <a href="{{route('FirstFashion.ShirtbyCat', ['cat_id' => $c->cat_id])}}" style="color: black">
+                        <i class="fa-solid fa-shirt" >{{$c->cat_name}}</i>
+                        </a>
                     </p>
-                    <p>
-                        <i class="fa-solid fa-shirt">  P o l o</i>
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-shirt">  S w e a t e r</i>
-                    </p>
-                    <p>
-                        <i class="fa-solid fa-shirt">  T - s h i r t</i>
-                    </p>
+                    @endforeach
                 </div>
                 <!-- Grid column -->
 

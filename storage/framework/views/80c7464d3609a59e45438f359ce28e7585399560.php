@@ -171,7 +171,7 @@
         ><i class="fa-solid fa-shirt">&nbsp; B e s t &nbsp; - &nbsp; S e l l i n g &nbsp; P r o d u c t &nbsp;</i><i class="fa-solid fa-shirt"></i></h2>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>

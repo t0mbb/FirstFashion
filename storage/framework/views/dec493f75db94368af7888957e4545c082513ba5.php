@@ -13,7 +13,7 @@
 
 
 
-
+    <?php echo $__env->make('FirstFashion.sessionmessage', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>;
     <div class="container" style="padding-bottom: 50px">
         <div class="row" id="contatti">
             <div class="container mt-5" >
@@ -22,28 +22,31 @@
                     <div class="col-md-6 maps" >
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5343.480492313702!2d105.78725852670307!3d21.02304046669612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab9f983e67af%3A0x41721163aff0f497!2zQ2h1bmcgY8awIEdvbGRlbiBQYXJrIETGsMahbmcgxJDDrG5oIE5naOG7hw!5e0!3m2!1svi!2s!4v1646664153637!5m2!1svi!2s" width="150" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
+
+
                     <div class="col-md-6">
                         <h2 style="text-align: center" class="text-uppercase mt-3 font-weight-bold text-white">Contact Us</h2>
-                        <form action="">
+                        <form action="<?php echo e(route('FirstFashion.MailContact', ['contact' => $contact])); ?>" method="post">
+                            <?php echo csrf_field(); ?>
                             <div class="row">
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Name" required>
+                                        <input type="text"  name="name" class="form-control mt-2" placeholder="Name" required value="<?php echo e($contact->name); ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="email" class="form-control mt-2" placeholder="Email" required>
+                                        <input type="email"  name="email"class="form-control mt-2" placeholder="email" required value="<?php echo e($contact->email); ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control mt-2" placeholder="Phone number" required>
+                                        <input type="text" name="phone" class="form-control mt-2" placeholder="Phone number" required value="<?php echo e($contact->phone); ?>">
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
                                     <input class="form-control mt-2" list="datalistOptions"
-                                           placeholder="Gender">
+                                           placeholder="Gender" name="gender"value="<?php echo e($contact->gender); ?>">
                                     <datalist id="datalistOptions">
                                         <option value="Female">
                                         <option value="Male">
@@ -52,9 +55,10 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Your Message" rows="3" required></textarea>
+                                        <textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="3" value="<?php echo e($contact->message); ?>"></textarea>
                                     </div>
                                 </div>
+
                                 <div class="col-12">
                                     <button class="btn btn-success" type="submit">Send message</button>
                                 </div>

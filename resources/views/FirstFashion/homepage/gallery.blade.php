@@ -496,7 +496,7 @@
         @foreach($polo2 as $s)
         <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 2">
             <figure>
-                <img src="{{asset('storage/images/shirt/' .$s->shirt_image)}}" style="width: 400px; height: 400px;" alt="" />
+                <img src="{{asset('storage/images/shirt/' .$s->shirt_image)}}" style="width: 300px; height: 400px;" alt="" />
                 <figcaption style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
                 color: whitesmoke;
                 font-size: 20px;
@@ -517,7 +517,7 @@
         @foreach($shirt1 as $s)
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 1">
                 <figure>
-                    <img src="{{asset('storage/images/shirt/' .$s->shirt_image)}}" style="width: 400px; height: 400px;"alt="" />
+                    <img src="{{asset('storage/images/shirt/' .$s->shirt_image)}}" style="width: 300px; height: 400px;"alt="" />
                     <figcaption style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
                 color: whitesmoke;
                 font-size: 20px;
@@ -538,7 +538,7 @@
         @foreach($sweater3 as $s)
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 3">
                 <figure>
-                    <img src="{{asset('storage/images/shirt/' .$s->shirt_image)}}" style="width: 400px; height: 400px;" alt="" />
+                    <img src="{{asset('storage/images/shirt/' .$s->shirt_image)}}" style="width: 300px; height: 400px;" alt="" />
                     <figcaption style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
                 color: whitesmoke;
                 font-size: 20px;
@@ -560,7 +560,7 @@
         @foreach($tshirt4 as $s)
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter 4">
                 <figure>
-                    <img src="{{asset('storage/images/shirt/' .$s->shirt_image)}}" style="width: 400px; height: 400px;" alt="" />
+                    <img src="{{asset('storage/images/shirt/' .$s->shirt_image)}}" style="width: 300px; height: 400px;" alt="" />
                     <figcaption style="text-shadow: 0 -1px 4px #FFF, 0 -2px 5px #fcb216, 0 -10px 10px #FF5549, 0 -18px 40px #FF5549,0 -10px 60px #FF5549;
                 color: whitesmoke;
                 font-size: 20px;

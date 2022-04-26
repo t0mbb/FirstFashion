@@ -89,6 +89,10 @@ Route::group(['prefix' => 'FirstFashion'], function (){
             'uses' => 'FirstFashionAdminController@AdminMail',
             'as' => 'FirstFashion.AdminMail'
         ]);
+        Route::get('mail_contact',[
+            'uses'=> 'FirstFashionAdminController@MailAdminContact',
+            'as'=> 'FirstFashion.MailAdminContact'
+            ]);
 
         //Route Category
         // category manager
@@ -221,6 +225,12 @@ Route::group(['prefix' => 'FirstFashion'], function (){
         'uses' => 'FirstFashionHomepageController@contactUs',
         'as' => 'FirstFashion.contactUs'
     ]);
+    Route::post('contactUs',[
+        'uses'=> 'FirstFashionHomepageController@MailContact',
+        'as' => 'FirstFashion.MailContact'
+    ]);
+
+
 
 
 });

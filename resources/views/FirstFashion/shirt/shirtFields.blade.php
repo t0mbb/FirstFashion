@@ -45,7 +45,7 @@
         @foreach($categories as $c)
             <option value="{{old('cat_id')?? $c->cat_id}}"
                 {{ ($pId != null && $c->cat_id == $pId) ? 'selected' : '' }}
-            >{{old('cat_id')?? $c->cat_name }}</option>
+            >{{old('cat_name')?? $c->cat_name }}</option>
         @endforeach
     </select>
 </div>
