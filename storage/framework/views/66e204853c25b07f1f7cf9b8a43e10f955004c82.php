@@ -112,13 +112,13 @@
                     <li>
                         <a href="<?php echo e(route('FirstFashion.AdminMail')); ?>" style="font-size: 25px">
                             <i class="fa fa-envelope" style="font-size: 25px"></i>
-                            <span>Mail</span>
+                            <span>Mail Shirt</span>
                         </a>
                     </li>
                     <li>
-                        <a href="<?php echo e(route('FirstFashion.MailAdminContact')); ?>" style="font-size: 25px">
+                        <a href="<?php echo e(route('FirstFashion.MailAdminContact')); ?>" style="font-size: 24px">
                             <i class="fa fa-envelope" style="font-size: 25px"></i>
-                            <span>Mail</span>
+                            <span>Mail Contact</span>
                         </a>
                     </li>
                 </ul>

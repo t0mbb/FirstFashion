@@ -23,7 +23,7 @@ class ManualAuthController extends Controller
         }
         if (empty($ad_p))
         {
-            return redirect()->route('auth.ask')->with('msg', ' Please Enter Your Password!');
+            return redirect()->route('auth.ask')->withInput()->with('msg', ' Please Enter Your Password!');
         }
         $account = AdminRepos::getAllAdmins();
 

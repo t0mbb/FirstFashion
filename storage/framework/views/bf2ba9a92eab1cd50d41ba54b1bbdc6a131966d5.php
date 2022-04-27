@@ -5,7 +5,7 @@
     </tr>
     <tr class="table-primary border-info-bold" style="font-size: 20px; background-color: rgb(255,99,71); color: whitesmoke">
         <th style="font-size: 20px; color: black; background-color: rgb(255,99,71);">Password</th>
-        <td><?php echo e($admin->ad_pass); ?></td>
+        <td>***************************</td>
     </tr>
     <tr class="table-primary border-info-bold" style="font-size: 20px; background-color: rgb(255,99,71); color: whitesmoke">
         <th style="font-size: 20px; color: black; background-color: rgb(255,99,71);">Full Name</th>

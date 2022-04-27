@@ -169,9 +169,9 @@
         <h2 class="text-center"
             style="margin-top: 60px; margin-bottom: 30px; padding: 20px; font-size: 30px; background: linear-gradient(to right, rgba(249, 0, 104, 1) 0%, rgba(247, 117, 24, 1) 100%) "
         ><i class="fa-solid fa-shirt">&nbsp; B e s t &nbsp; - &nbsp; S e l l i n g &nbsp; P r o d u c t &nbsp;</i><i class="fa-solid fa-shirt"></i></h2>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="01" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>

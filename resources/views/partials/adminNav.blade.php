@@ -112,13 +112,13 @@
                     <li>
                         <a href="{{route('FirstFashion.AdminMail')}}" style="font-size: 25px">
                             <i class="fa fa-envelope" style="font-size: 25px"></i>
-                            <span>Mail Shirt Booking</span>
+                            <span>Mail Shirt</span>
                         </a>
                     </li>
                     <li>
-                        <a href="{{route('FirstFashion.MailAdminContact')}}" style="font-size: 25px">
+                        <a href="{{route('FirstFashion.MailAdminContact')}}" style="font-size: 24px">
                             <i class="fa fa-envelope" style="font-size: 25px"></i>
-                            <span>Mail Contact Feedback</span>
+                            <span>Mail Contact</span>
                         </a>
                     </li>
                 </ul>

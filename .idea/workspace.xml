@@ -2,34 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3cecb261-4eb9-451a-9e3c-837c0633ef28" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/FirstFashion/admin/mailContact.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionAdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionAdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionCustomerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionCustomerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionHomepageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FirstFashionHomepageController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/AdminRepos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/AdminRepos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Repository/HomepageRepos.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Repository/HomepageRepos.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/FirstFashion.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/FirstFashion.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ManualAuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ManualAuthController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/admin/adminDetails.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/admin/adminDetails.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/admin/adminFields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/admin/adminFields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/admin/admin_manager.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/admin/admin_manager.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/customer/register.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/customer/register.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/contactUs.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/contactUs.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/gallery.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/gallery.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/homepage/modal.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/admin/updateAdmin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/admin/updateAdmin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/homepage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/homepage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/FirstFashion/shirt/shirtFields.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/FirstFashion/shirt/shirtFields.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/partials/FirstFashionFoo.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/FirstFashionFoo.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/partials/adminNav.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/partials/adminNav.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/nE6hrPsrx99ako5CKdRC5dVFv4L2gbWWXg1FPaXI" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/7c4RotDxNbWxErwMhd7WBY2ePbRLiCrz4I63UEcd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/domGkTkc75l1Y3svv3UPJKfW6AZce9cfZu7bSg4G" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/sessions/meMS1pGPo2FX7Yviixvb2zJG1GMYqv2EMW1QPIBM" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/2da047049ae289ba215359cf8fd0da411b0bc18f.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/2da047049ae289ba215359cf8fd0da411b0bc18f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/333742156b6aca3e3fbbb9779ba61e48b820b092.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/333742156b6aca3e3fbbb9779ba61e48b820b092.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/66e204853c25b07f1f7cf9b8a43e10f955004c82.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/66e204853c25b07f1f7cf9b8a43e10f955004c82.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/68bd25ffb4b588873d5e543d75366f9140880092.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/68bd25ffb4b588873d5e543d75366f9140880092.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/8ec03fef1be2fa8d1de6c278ea5ea7c0e8457a57.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/8ec03fef1be2fa8d1de6c278ea5ea7c0e8457a57.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/a9874e0b58b9163b15efa089a1a78c2c5248650f.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/a9874e0b58b9163b15efa089a1a78c2c5248650f.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/b9ce187fef9be030875b036a0d776c10f104a426.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/b9ce187fef9be030875b036a0d776c10f104a426.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/storage/framework/views/dec493f75db94368af7888957e4545c082513ba5.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/dec493f75db94368af7888957e4545c082513ba5.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/80c7464d3609a59e45438f359ce28e7585399560.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/80c7464d3609a59e45438f359ce28e7585399560.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/ae8bf24f85f93eeacfa46aab66deec68a8029c61.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/ae8bf24f85f93eeacfa46aab66deec68a8029c61.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/views/bf2ba9a92eab1cd50d41ba54b1bbdc6a131966d5.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/bf2ba9a92eab1cd50d41ba54b1bbdc6a131966d5.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/framework/views/f69113d2ea633d1bf4a3cd0a1c515cacbc47e338.php" beforeDir="false" afterPath="$PROJECT_DIR$/storage/framework/views/f69113d2ea633d1bf4a3cd0a1c515cacbc47e338.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/storage/logs/laravel.log" beforeDir="false" afterPath="$PROJECT_DIR$/storage/logs/laravel.log" afterDir="false" />
     </list>
@@ -227,7 +215,8 @@
       <workItem from="1650940654271" duration="17207000" />
       <workItem from="1650988293235" duration="266000" />
       <workItem from="1650988582585" duration="297000" />
-      <workItem from="1650988902503" duration="5215000" />
+      <workItem from="1650988902503" duration="5794000" />
+      <workItem from="1651077566646" duration="3030000" />
     </task>
     <servers />
   </component>
